@@ -10,3 +10,8 @@ public class Main{
         System.out.println(A-B);
     }
 }
+
+/*
+Solution :
+I. 정수 2개를 빼야하므로 Scanner로 A와 B를 입력받아 빼서 print
+*/
