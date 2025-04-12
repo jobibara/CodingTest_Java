@@ -4,7 +4,3 @@ public class Main{
     }
 }
 
-/*
-Solution :
-I. Hello World! 출력
-*/
