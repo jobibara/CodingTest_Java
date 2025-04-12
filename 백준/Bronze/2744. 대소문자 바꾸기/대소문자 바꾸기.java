@@ -1,21 +1,27 @@
-import java.io.*;
 import java.util.*;
 
-public class Main{
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();
-        String ans = "";
-        
-        for(int i = 0; i<str.length(); i++) {
-            char x = str.charAt(i);
-            if(Character.isUpperCase(x)) {
-                ans = ans + Character.toLowerCase(x);
-            }
-            else {
-                ans = ans + Character.toUpperCase(x);
-            }
-        }
-        System.out.println(ans);
-    }
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String str = sc.next();
+		
+		String answer = "";
+		
+		for(int i = 0; i<str.length(); i++) {
+			char temp = str.charAt(i);
+			
+			if(Character.isUpperCase(temp)) {
+				answer += Character.toLowerCase(temp);
+			}
+			
+			else {
+				answer += Character.toUpperCase(temp);
+			}
+		}
+		
+		System.out.println(answer);
+		
+		sc.close();
+	}
 }
